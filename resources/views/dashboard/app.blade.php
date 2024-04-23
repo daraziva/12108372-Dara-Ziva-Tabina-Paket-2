@@ -72,7 +72,7 @@
         {{-- End Card Data Penjualan --}}
 
         {{-- Card Data User --}}
-        <div class="col-lg-4">
+        {{-- <div class="col-lg-4">
             <div class="card">
                 <div style="height: 350px; overflow: hidden; display: flex; justify-content: center; align-items: center;">
                     <img src="{{ asset('assets/img/news-5.jpg') }}" alt="Data Produk" style="width: 500px">
@@ -82,7 +82,7 @@
                     <h5 class="card-text" style="text-align: center;"><a href="/user" class="btn btn-success rounded-pill">Lihat</a></h5>
                 </div>
             </div>
-        </div>
+        </div> --}}
         {{-- End Card Data User --}}
 
         @else

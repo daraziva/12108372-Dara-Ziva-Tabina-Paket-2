@@ -13,7 +13,33 @@ class ProdukController extends Controller
      */
     public function index()
     {
+
+        $search = $request->input('search');
+        dd($search);
+        // Ambil nilai pencarian dari request
+        // Lakukan query pencarian dan paginasi
+        if ($search) {
+        $produk = Produk::where ('product_name', 'like', "%$search%")->get();
+        } else {
         $produk = Produk::all();
+        }
+
+        return view("pages.produk.index", compact("produk"));
+    }
+
+    public function data(Request $request)
+    {
+
+        $search = $request->input('search');
+        // dd($search);
+        // Ambil nilai pencarian dari request
+        // Lakukan query pencarian dan paginasi
+        if ($search) {
+        $produk = Produk::where ('product_name', 'like', "%$search%")->get();
+        } else {
+        $produk = Produk::all();
+        }
+
         return view("pages.produk.index", compact("produk"));
     }
 

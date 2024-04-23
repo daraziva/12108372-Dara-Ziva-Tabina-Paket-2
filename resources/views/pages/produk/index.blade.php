@@ -41,6 +41,12 @@
         @endif
 
         {{-- Columns --}}
+
+        <form action="{{ route('produk.index') }}" method="GET" class="form-inline">
+            <input type="text" name="search" class="form-control mr-2" placeholder="Cari data produk...">
+            <button type="submit" class="btn btn-primary"><i class="fas fa-search"></i> Cari</button>
+        </form>
+
         <div class="col-lg-12">
             <div class="row">
                 <div class="card">

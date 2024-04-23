@@ -14,7 +14,7 @@
             <!-- End Dashboard Nav -->
 
             <li class="nav-item">
-                <a class="nav-link collapsed" href="/produk">
+                <a class="nav-link collapsed" href="/produk/data">
                     <i class="bi bi-shop"></i>
                     <span>Produk</span>
                 </a>
@@ -46,7 +46,7 @@
             <!-- End Dashboard Nav -->
 
             <li class="nav-item">
-                <a class="nav-link collapsed" href="/produk">
+                <a class="nav-link collapsed" href="/produk/data">
                     <i class="bi bi-shop"></i>
                     <span>Produk</span>
                 </a>
